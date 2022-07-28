@@ -86,11 +86,12 @@ print(fg.lightgrey, "Box Area per Layer:")
 for index, box in enumerate(list_layer_area):
     print('\t', fg.blue, index + 1, '\t', fg.green, box[0], fg.lightcyan, box[1], fg.lightgrey, box[2], box[3],
           fg.yellow, box[4])
-# Poly Layer is No. 2. We are goind to take the data stored in the list
+# Poly Layer is No. 2. We are going to take the data stored in the list
 poly_area = 0
 poly_large = 0
+poly_mask_name = "LAYER 2"
 for box in list_layer_area:
-    if box[0] == "LAYER 2":
+    if box[0] == poly_mask_name:
         poly_area = poly_area + int(box[4][5:])
         poly_large = poly_large + int(box[3][6:])
 print("TOTAL POLY AREA:\t"+str(poly_area*unit_um)+'\n'+"TOTAL POLY LARGE:\t"+str(poly_large*unit_um))
