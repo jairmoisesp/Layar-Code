@@ -19,6 +19,6 @@ Layar has as output:
 
 - Data (Large and Area) of the polysilicon used in the layouts
 
-- ![image](https://user-images.githubusercontent.com/110146406/181416947-0470d587-60e9-4857-8521-68657fce88fb.png)
+![image](https://user-images.githubusercontent.com/110146406/181416947-0470d587-60e9-4857-8521-68657fce88fb.png)
 
 Note: The Poly mask has to be assigned to LAYER 2 during the layout generation process. Otherwise, change line 92 with the corresponding Layer name for the poly mask
